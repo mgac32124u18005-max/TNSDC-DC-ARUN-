@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio showcasing global warming solutions and environmental expertise">
+    <meta name="keywords" content="global warming, climate change, environmental science, GIS, Python, sustainability">
+    <title>Global Warming Solutions Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: #f7f7f7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #d32f2f, #4fc3f7);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.4rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        nav {
+            background: #e3f2fd;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #d32f2f;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4fc3f7;
+        }
+
+        section {
+            padding: 2rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1.2rem;
+            color: #d32f2f;
+        }
+
+        .skills-grid, .projects-grid, .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card, .project-card, .experience-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-card:hover, .project-card:hover, .experience-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .project-card img {
+            max-width: 100%;
+            border-radius: 4px;
+            margin-bottom: 0.6rem;
+        }
+
+        .project-card a {
+            color: #d32f2f;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .project-card a:hover {
+            color: #4fc3f7;
+        }
+
+        .contact-form {
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.6rem;
+            margin-bottom: 0.7rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .contact-form button {
+            background: #d32f2f;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #b71c1c;
+        }
+
+        footer {
+            background: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 1.5rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Hello, I'm</h3>
+        <h1>E Arun Kumar</h1>
+        <h3> I'm a Web Developer</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+        <center>
+        <img src="https://i.postimg.cc/QxQWgmjM/IMG-20250908-144528.jpg" alt="Your Photo" width=150 height=230>
+        </center>
+            I am a climate scientist dedicated to combating global warming through innovative technology and strategic policy solutions. My expertise in GIS, climate modeling, and sustainability consulting drives impactful environmental change.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">GIS Mapping (ArcGIS)</div>
+            <div class="skill-card">Python Data Analysis</div>
+            <div class="skill-card">Climate Modeling</div>
+            <div class="skill-card">Sustainability Consulting</div>
+            <div class="skill-card">Project Management</div>
+            <div class="skill-card">Climate Policy Analysis</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Carbon Footprint Map</h3>
+                <img src="https://via.placeholder.com/300x200?text=Carbon+Map" alt="Carbon Footprint Map">
+                <p>Developed a GIS-based tool to map carbon emissions, reducing emissions by 18% in targeted regions.</p>
+                <a href="https://github.com/your-repo" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Climate Impact Dashboard</h3>
+                <img src="https://via.placeholder.com/300x200?text=Climate+Dashboard" alt="Climate Impact Dashboard">
+                <p>Built a Python-based dashboard to track global warming trends, aiding policy decisions.</p>
+                <a href="https://github.com/your-repo" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Renewable Energy Plan</h3>
+                <img src="https://via.placeholder.com/300x200?text=Energy+Plan" alt="Renewable Energy Plan">
+                <p>Consulted on a business strategy for renewable energy adoption, cutting carbon emissions by 15%.</p>
+                <a href="https://github.com/your-repo" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h3>Climate Data Analyst</h3>
+                <p>GreenFuture Solutions | 2023 - Present</p>
+                <p>Analyzed climate data using GIS and Python, delivering insights for global warming mitigation.</p>
+            </div>
+            <div class="experience-card">
+                <h3>Sustainability Consultant</h3>
+                <p>Eco Innovations | 2021 - 2023</p>
+                <p>Developed policies to reduce carbon footprints, enhancing client sustainability goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sarah Evans. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Contact form submission (placeholder for backend)
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert(`Thank you, ${name}! Your message has been sent.`);
+                this.reset();
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
